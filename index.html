@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="POST" id="form">
+        <input type="hidden" name="access_key" value="0d80674e-cede-4ba8-969d-31302ac0d051">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+        
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+        <button type="submit">Submit Form</button>
+        
+        <div id="result"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
